@@ -2,6 +2,8 @@ import Tab = chrome.tabs.Tab;
 
 // Run Listener on first installation/update
 chrome.runtime.onInstalled.addListener(() => {
+  // Set initial storage default value
+  chrome.storage.sync.set({ color: '#ff0000'});
   // Run listener on complete of loading a page
   chrome.webNavigation.onCompleted.addListener(
     // Listener
