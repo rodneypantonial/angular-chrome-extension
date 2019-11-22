@@ -61,6 +61,11 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "dev": {
+              "customWebpackConfig": {
+                "path": "./custom-webpack-dev.config.js"
+              }
             }
           }
         },
